@@ -30,17 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Função para ajustar a altura da tela
-function ajustarAlturaTela() {
-    const alturaDisponivel = window.innerHeight;
-    document.querySelector('.content').style.minHeight = alturaDisponivel + 'px';
-}
-
-// Chamada da função quando a página é carregada e quando a janela é redimensionada
-window.addEventListener('load', ajustarAlturaTela);
-window.addEventListener('resize', ajustarAlturaTela);
-
-
 const yearsElement = document.getElementById('years');
 const monthsElement = document.getElementById('months');
 const daysElement = document.getElementById('days');
