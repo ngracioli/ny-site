@@ -1,0 +1,401 @@
+/* Config do dia 16 */
+
+.ny-day .center {
+    background-color: #fa8ea9;
+}
+
+.ny-day .main {
+    background: #fa8ea9;
+}
+
+.ny-day .color-overlay {
+    display: none;
+}
+
+.ny-day .main .img-box {
+    width: 500px;
+    height: 100%;
+    background: url(img/bg.jpg);
+    background-size: cover;
+}
+
+/* Config Corações do dia 16 */
+
+.ny-day .hearts-container span {
+    position: fixed;
+    bottom: -200px;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    animation: animate-hearts 5s linear infinite;
+}
+
+.ny-day .hearts-container span:before,
+.ny-day .hearts-container span:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.ny-day .hearts-container span:before {
+    transform: translateY(-50%);
+}
+
+.ny-day .hearts-container span:after {
+    transform: translateX(-50%);
+}
+
+.ny-day .hearts-container span:nth-child(1) {
+    left: 60px;
+    animation-delay: 1s;
+}
+
+.ny-day .hearts-container span:nth-child(2) {
+    left: 10%;
+    animation-delay: 2s;
+}
+
+.ny-day .hearts-container span:nth-child(3) {
+    left: 20%;
+    animation-delay: 4s;
+}
+
+.ny-day .hearts-container span:nth-child(4) {
+    left: 30%;
+    animation-delay: 3s;
+}
+
+.ny-day .hearts-container span:nth-child(5) {
+    left: 40%;
+    animation-delay: 1.5s;
+}
+
+.ny-day .hearts-container span:nth-child(6) {
+    left: 50%;
+    animation-delay: 5s;
+}
+
+.ny-day .hearts-container span:nth-child(7) {
+    left: 60%;
+    animation-delay: 3.5s;
+}
+
+.ny-day .hearts-container span:nth-child(8) {
+    left: 70%;
+    animation-delay: 4.5s;
+}
+
+@keyframes animate-hearts {
+    0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 1;
+    }
+
+    80% {
+        opacity: .7;
+    }
+
+    100% {
+        transform: translateY(-1200px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+/* Config Loader */
+.content {
+    display: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #841628;
+}
+
+.loader {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    animation: loaderbeat 1.4s linear infinite;
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.loader:before {
+    transform: translateY(-50%);
+}
+
+.loader:after {
+    transform: translateX(-50%);
+}
+
+@keyframes loaderbeat {
+    0% {
+        transform: rotate(45deg) scale(1);
+    }
+
+    25% {
+        transform: rotate(45deg) scale(1);
+    }
+
+    30% {
+        transform: rotate(45deg) scale(1.4);
+    }
+
+    50% {
+        transform: rotate(45deg) scale(1.2);
+    }
+
+    70% {
+        transform: rotate(45deg) scale(1.4);
+    }
+
+    100% {
+        transform: rotate(45deg) scale(1);
+    }
+}
+
+/* Config Site */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', cursive;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #841628;
+    z-index: 1;
+}
+
+.main .img-sticker {
+    z-index: 3;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.main .top-left {
+    display: block;
+    top: 0;
+    background-image: url('img/gif.gif');
+}
+
+.main .bottom-right {
+    display: none;
+    bottom: 0;
+    right: 10px;
+    background-image: url('img/gif2.gif');
+}
+
+.main .img-box {
+    width: 500px;
+    height: 100%;
+    background: url(img/bg-pc.jpg);
+    background-size: cover;
+    z-index: 3;
+}
+
+.main .box-contagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 450px);
+    z-index: 3;
+}
+
+.main .box-contagem h1 {
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-top: 1.5em;
+}
+
+.main .box-contagem h2 {
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 550;
+    line-height: 2em;
+    margin-bottom: 1em;
+}
+
+.main .box-contagem h2 span {
+    line-height: 1em;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.main .box-contagem .contagem {
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .box-contagem .contagem div {
+    position: relative;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin: 0 15px;
+    margin-top: -25px;
+}
+
+.main .box-contagem .contagem div:before {
+    content: attr(data-label);
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    color: #fff;
+    font-size: 0.35em;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.main .box-contagem .contagem div#years:before {
+    content: 'anos';
+}
+
+.main .box-contagem .contagem div#months:before {
+    content: 'meses';
+}
+
+.main .box-contagem .contagem div#days:before {
+    content: 'dias';
+}
+
+.main .box-contagem .contagem div#hours:before {
+    content: 'horas';
+}
+
+.main .box-contagem .contagem div#minutes:before {
+    content: 'mins';
+}
+
+.main .box-contagem .contagem div#seconds:before {
+    content: 'segs';
+}
+
+.main .box-contagem .contagem div#seconds,
+.main .box-contagem .contagem div#seconds:before {
+    color: #fff;
+}
+
+/* Config Resoluções */
+
+@media (max-width: 991px) {
+
+    .ny-day .hearts-container span {
+        display: none;
+    }
+
+    .loader {
+        width: 60px;
+        height: 60px;
+    }
+
+    .main .img-box {
+        display: none;
+    }
+
+    .main .box-contagem {
+        width: 100%;
+    }
+
+    .main .img-sticker {
+        display: block;
+    }
+
+    .main,
+    .ny-day .main {
+        background-image: url(img/bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 1);
+        z-index: -2;
+    }
+
+    .color-overlay {
+        display: none;
+    }
+
+    .ny-day .color-overlay {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: #fa8ea967;
+    }
+
+    .main .box-contagem .contagem {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .loader {
+        width: 50px;
+        height: 50px;
+    }
+
+    .main .box-contagem h2 {
+        font-size: 1.2em;
+    }
+
+    .main .box-contagem .contagem {
+        height: 100px;
+    }
+
+    .main .box-contagem .contagem div {
+        width: 80px;
+        font-size: 2em;
+        margin: 0;
+        margin-top: -25px;
+    }
+}
