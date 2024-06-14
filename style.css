@@ -184,6 +184,10 @@
     font-family: 'Work Sans', cursive;
 }
 
+body {
+    height: 100%;
+}
+
 .main {
     position: relative;
     display: flex;
